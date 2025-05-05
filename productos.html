@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - NickGames</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>NickGames</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="images/ps5.jpg" alt="PlayStation 5">
+          <h3>PlayStation 5</h3>
+          <p>La última consola de Sony con gráficos 4K y SSD ultrarrápido.</p>
+          <p class="precio">$2,500,000 COP</p>
+          <button onclick="agregarAlCarrito('PlayStation 5', 2500000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/xbox-series-x.jpg" alt="Xbox Series X">
+          <h3>Xbox Series X</h3>
+          <p>Potente consola de Microsoft con Game Pass incluido por 3 meses.</p>
+          <p class="precio">$2,300,000 COP</p>
+          <button onclick="agregarAlCarrito('Xbox Series X', 2300000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/nintendo-switch.jpg" alt="Nintendo Switch">
+          <h3>Nintendo Switch OLED</h3>
+          <p>Consola híbrida con pantalla OLED de 7 pulgadas.</p>
+          <p class="precio">$1,500,000 COP</p>
+          <button onclick="agregarAlCarrito('Nintendo Switch OLED', 1500000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/fifa24.jpg" alt="FIFA 24">
+          <h3>FIFA 24</h3>
+          <p>El último juego de fútbol de EA Sports para PS5/Xbox.</p>
+          <p class="precio">$200,000 COP</p>
+          <button onclick="agregarAlCarrito('FIFA 24', 200000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/call-of-duty.jpg" alt="Call of Duty">
+          <h3>Call of Duty: Modern Warfare III</h3>
+          <p>El shooter más vendido del año, edición especial.</p>
+          <p class="precio">$250,000 COP</p>
+          <button onclick="agregarAlCarrito('Call of Duty: Modern Warfare III', 250000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/mario-kart.jpg" alt="Mario Kart">
+          <h3>Mario Kart 8 Deluxe</h3>
+          <p>El clásico juego de carreras para Nintendo Switch.</p>
+          <p class="precio">$180,000 COP</p>
+          <button onclick="agregarAlCarrito('Mario Kart 8 Deluxe', 180000)">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <aside id="carrito-lateral">
+      <h2>Carrito</h2>
+      <div id="carrito">
+        <!-- Productos agregados se mostrarán aquí -->
+      </div>
+      <p class="total-label">Total: <span id="total">$0 COP</span></p>
+      <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </aside>
+    <button id="boton-carrito" onclick="toggleCarrito()">🛒 Ver Carrito</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 NickGames. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
